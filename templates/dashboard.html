@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Authentication System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Dashboard</h1>
+
+    <div class="success">
+        Login successful!
+    </div>
+
+    <p style="text-align: center;">
+        Welcome, <strong>{{ username }}</strong>!
+    </p>
+
+    <p style="text-align: center;">
+        You are authenticated and can access this protected page.
+    </p>
+
+    <a class="logout" href="{{ url_for('logout') }}">
+        Logout
+    </a>
+
+</div>
+
+</body>
+</html>
